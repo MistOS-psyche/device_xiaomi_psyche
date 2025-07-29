@@ -50,6 +50,10 @@ PRODUCT_PACKAGES += \
     SettingsTargetOverlayPsycheGL \
     SystemUITargetOverlay
 
+# Overlays MistOS
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-mist
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
