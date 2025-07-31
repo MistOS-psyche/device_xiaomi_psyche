@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-$(call inherit-product-if-exists, device/xiaomi/camera-psyche/miuicamera.mk)
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
 
 # Dolby Support
 TARGET_USES_MIUI_DOLBY := true
