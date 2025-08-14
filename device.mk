@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     SettingsTargetOverlayPsycheGL \
     SystemUITargetOverlay
 
+# Overlays Infinity-X
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-infinity
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
@@ -77,6 +81,9 @@ PRODUCT_COPY_FILES += \
 # WiFi
 PRODUCT_PACKAGES += \
     WifiTargetOverlay
+
+# Inherit Infinity-X sign keys
+-include vendor/infinity-priv/keys/keys.mk
 
 # Inherit from vendor blobs
 $(call inherit-product, vendor/xiaomi/psyche/psyche-vendor.mk)
