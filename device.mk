@@ -47,6 +47,10 @@ PRODUCT_PACKAGES += \
     SettingsTargetOverlayPsycheGL \
     SystemUITargetOverlay
 
+# Crdroid Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-crd
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 
